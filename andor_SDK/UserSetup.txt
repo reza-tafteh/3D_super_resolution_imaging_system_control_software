@@ -1,0 +1,52 @@
+Version History
+
+Version     Date         Description
+0.1         27/09/2006   Some typo errors were found in certain functions causing a crash, eg function WaitForAcquisition
+0.2	    20/11/2006	 Updating for version 2.76 of the Andor SDK
+0.3	    24/04/2007	 Updating for version 2.77 of the Andor SDK
+0.4	    05/06/2007	 Updating for version 2.78 of the Andor SDK
+0.5	    05/07/2007	 Adding 3 new functions
+0.6	    05/11/2007	 Adding new functions and build with version 2.79.30000.0 of the Andor SDK
+0.7	    02/02/2009	 Updated data acquisition functions to return 32 and 16 bit data and updated SIF functions - built with SDK 2.83.30000.0
+ 
+The installation will edit the file 'matlabrc.m' located in the 'matlabroot\toolbox\local' directory by adding a call to the start up file 'andor_startup.m'. The 'andor_startup.m' file will add the necessary paths to Matlab and change the current directory so that the Andor functions/examples can be run.
+
+In the toolbox directory there will be an Andor sub-directory and under this 2 further directories 'Camera Files' and 'm files'.  The 'Camera Files' directory will contain the files needed to operate the Andor range of cameras.  The 'm files' directory contains a number of example m files to show you how to control your Andor camera.
+
+After running the installation you will be prompted to restart your PC.  If you have an Andor PCI controller Card for your camera and you have not inserted it, please shut down the PC and do so now, otherwise just restart.
+
+During the restart if you are prompted for a Driver for your newly installed PCI card, point to the directory 'matlabroot\toolbox\Andor'. You will then have to restart your PC once more.
+
+You are now ready to run Matlab.  After starting up Matlab, please perform the following commands in the Command Window. This will verify the installation of your Andor software:
+
+
+path = ''
+ret = AndorInitialize(path)
+
+it should come back with
+
+ret =
+
+       20002
+
+>> 
+[ret] = AndorShutDown
+it should come back with
+
+ret =
+
+       20002
+
+To perform the examples enter the command 'andor' to run the andor.m example.
+
+Other examples are
+
+andor.m
+DDGFunctionTest.m
+Example1.m
+Example2.m
+Example3.m
+FVB_example.m
+Image_example.m
+
+For a description of all available commands please see the 'Software Development Kit.pdf' file provided.

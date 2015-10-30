@@ -1,0 +1,43 @@
+
+
+There are 2 special functions provided specifically for Matlab, which will read
+an already saved sif file and store it in an array within Matlab.  They are 
+'GetAndorSifSize' and 'GetAndorSifData' and should be used as follows:-
+ 
+GetAndorSifSize
+---------------
+
+[ReturnCode, SeriesLength, ImageSize, TotalAcquisitionSize] = GetAndorSifSize('c:\andor\image.sif', 0)
+
+  ReturnCode = 0 if an error occurs
+  ReturnCode = 1 if the function
+
+  TotalAcquisitionSize = the total size of all the images,  i.e. SeriesLength * ImageSize 
+
+  Input parameter 1 = a string with the sif file name
+  Input parameter 2 = the data type you wish to access
+    0: signal
+    1: ref
+    2: background
+    3: source
+    4: live
+
+GetAndorSifData
+---------------
+
+// Declare your result array first
+ResultArray = zeros(1, TotalAcquisitionSize);
+
+[ReturnCode, ResultArray]=GetAndorSifData(TotalAcquisitionSize, 0, 'c:\andor\image.sif') 
+
+  ReturnCode = 0 if an error occurs
+  ReturnCode = 1 if the function
+
+  Input parameter 1 = the total size of all the images, i.e. TotalAcquisitionSize =  SeriesLength * ImageSize 
+  Input parameter 2 = the data type you wish to access
+    0: signal
+    1: ref
+    2: background
+    3: source
+    4: live
+  Input parameter 3 = a string with the sif file name
