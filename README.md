@@ -8,7 +8,7 @@ A software developed in MATLAB to:
              - Andor cameras (iXon and Newton cameras) 
              - Piezo stages (ASI, PI and Thorlabs)
              
-- maintain mecahnical stability of the setup by real-time drift correction, even when imaging deep into cell/tissue. In the current setup in LASIR, this is done by an optical design featuring two independent and variable focal planes 
+- maintain opto-mecahnical stability of the setup by real-time drift correction, even when imaging deep into cell/tissue. In the current setup in LASIR, this is done by an optical design featuring two independent and variable focal planes 
 
              - For a comprehensive description please refer to "Single molecule localization deep within thick cells; a novel                  super-resolution microscope" by Tafteh et al. DOI: 10.1002/jbio.201500140)
              - http://onlinelibrary.wiley.com/doi/10.1002/jbio.201500140/abstract
