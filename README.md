@@ -15,4 +15,4 @@ A software developed in MATLAB to:
              
 
 - Obtain depth-dependent calibration curve.
-- Provide user-friendly tools for on-line image processing and better monitoring of the setup upon image acquisition.
+- Provide user-friendly tools for on-line image processing and better monitoring of the setup during image acquisition.
