@@ -3,7 +3,7 @@ A software developed in MATLAB to:
 
 - control a home-built dSTORM setup designed for signel-molecule localization microscopy. List of devices to control is as following
 
-             - Lasers (Coherent Inc.'s lasers mainly)
+             - Illumination sources ( Coherent Inc.'s lasers mainly + LEDs)
              - Opto-elctical devices (phase modulators, adaptive optics, tunable lenses and filters)
              - Andor cameras (iXon and Newton cameras) 
              - Piezo stages (ASI, PI and Thorlabs)
